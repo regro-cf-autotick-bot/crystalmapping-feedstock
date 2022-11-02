@@ -1,6 +1,6 @@
-{% set name = 'crystalmapping' %}
-{% set version = '0.1.1' %}
-{% set sha256 = "dfb3603ee16ccf573db73769973d118f0a2e2cee0485d228a1ecdaf7c763ff7d" %}
+{% set name = "crystalmapping" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "853b76721fe92c8e90d4ce77ef2992a4d0793aa8f1e6333e9194b48e82a424f6" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ build:
 
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps"
+  script: {{ PYTHON }} -m pip install . --no-deps
 
 requirements:
   host:
@@ -40,7 +40,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: "A python package to map the crystal morphology, crystallinity and crystal quality in boules."
+  summary: A python package to map the crystal morphology, crystallinity and crystal quality in boules.
   description: |
     The software is used to map the crystal morphology, crystallinity and crystal quality in boules that 
     were the product of an optical floating zone furnace (OFZF) growth. The input of the algorithm is a series of
