@@ -23,17 +23,18 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - trackpy
-    - pyfai
-    - diffpy.structure
     - bluesky
     - databroker
+    - diffpy.structure
     - fire
+    - pyfai
+    - trackpy
 
 test:
   imports:
     - crystalmapping
-    - crystalmapping.utils
+    - crystalmapping.crystalmapper
+    - crystalmapping.peakindexer
 
 about:
   home: https://st3107.github.io/crystalmapping
