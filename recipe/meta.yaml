@@ -26,9 +26,16 @@ requirements:
     - bluesky
     - databroker
     - diffpy.structure
+    - event-model
     - fire
+    - numpy
+    - ophyd
     - pyfai
+    - seaborn
+    - tifffile
+    - tqdm
     - trackpy
+    - xarray
 
 test:
   imports:
