@@ -1,6 +1,6 @@
 {% set name = "crystalmapping" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "853b76721fe92c8e90d4ce77ef2992a4d0793aa8f1e6333e9194b48e82a424f6" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "c1de888fbb61c6f63139b68f5f5e81d54fe3bcd89f1e19aca92f9ddf57b07a21" %}
 
 package:
   name: {{ name|lower }}
