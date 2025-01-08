@@ -14,15 +14,15 @@ source:
 build:
 
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - bluesky
     - databroker
     - diffpy.structure
@@ -38,6 +38,8 @@ requirements:
     - xarray
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - crystalmapping
     - crystalmapping.crystalmapper
